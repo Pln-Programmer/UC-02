@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo do texto */
+    font-size: 16px; /* Tamanho padrão da fonte */
+    padding: 20px; /* Espaçamento interno em todos os lados */
+}
+
+h1 {
+    color: #333; /* Cor do texto (cinza escuro) */
+}
+
+/* RGB - vermelho */
+.rgb {
+    color: rgb(255, 0, 0); /* Cor vermelha usando RGB */
+}
+
+/* HEX - verde */
+.hex {
+    color: #00ff00; /* Cor verde usando valor hexadecimal */
+}
+
+/* HSL - azul claro */
+.hsl {
+    color: hsl(200, 100%, 50%); /* Cor azul claro usando HSL (matiz 200, saturação 100%, luminosidade 50%) */
+}
+
+/* CMYK - simulação em RGB aproximado (ciano) */
+.cmyk {
+    color: rgb(0, 255, 255); /* Simulação da cor ciano usando RGB */
+}
+
+/* HSV - simulado com HSL, por não ser suportado diretamente */
+.hsv {
+    color: hsl(60, 100%, 50%); /* Cor amarela como simulação de HSV usando HSL */
+}
+
+/* Exemplo com list-style-type */
+.lista-tipo {
+    list-style-type: square; /* Tipo de marcador (quadrado) */
+    padding-left: 20px; /* Espaço à esquerda da lista */
+}
+
+/* Exemplo com list-style-position */
+.lista-posicao-inside {
+    list-style-position: inside; /* Marcador dentro do conteúdo do item */
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    padding: 10px; /* Espaço interno */
+}
+
+.lista-posicao-outside {
+    list-style-position: outside; /* Marcador fora do conteúdo do item */
+    background-color: #e0f7fa; /* Cor de fundo azul claro */
+    padding: 10px; /* Espaço interno */
+}
+
+/* Exemplo com list-style-image */
+.lista-imagem {
+    list-style-image: url('https://cdn-icons-png.flaticon.com/16/1828/1828817.png'); /* Ícone de estrela como marcador */
+    padding-left: 25px; /* Espaço à esquerda para acomodar a imagem */
+}
+
+/* Exemplo com margin e padding */
+.lista-espaco {
+    margin: 20px; /* Espaço externo */
+    padding: 15px; /* Espaço interno */
+    background-color: #f9f9f9; /* Cor de fundo cinza muito claro */
+    border-left: 4px solid #2196f3; /* Borda esquerda azul */
+}
+
+/* Exemplo com line-height para legibilidade */
+.lista-legivel {
+    line-height: 2; /* Altura da linha aumentada para melhor leitura */
+    list-style-type: decimal; /* Marcadores em formato de números */
+    padding-left: 20px; /* Espaço à esquerda */
+}
+
+a {
+    display: inline-block; /* Permite aplicar margin/padding como bloco */
+    margin: 10px 0; /* Espaço acima e abaixo do link */
+    padding: 10px 15px; /* Espaço interno do link */
+    text-decoration: none; /* Remove sublinhado padrão */
+    border: 2px solid transparent; /* Borda invisível por padrão */
+    transition: all 0.3s ease; /* Animações suaves em transições */
+}
+
+/* :link - link não visitado */
+a:link {
+    color: blue; /* Cor azul para link novo */
+    font-weight: normal; /* Peso da fonte normal */
+}
+
+/* :visited - link já visitado */
+a:visited {
+    color: purple; /* Cor roxa para link visitado */
+}
+
+/* :focus - foco via teclado (ex: Tab) */
+a:focus {
+    border: 2px dashed orange; /* Borda laranja tracejada quando focado */
+    background-color: #fff3e0; /* Fundo laranja claro */
+    outline: none; /* Remove contorno padrão do navegador */
+}
+
+/* :hover - mouse sobre o link */
+a:hover {
+    color: white; /* Texto branco ao passar o mouse */
+    background-color: #2196f3; /* Fundo azul ao passar o mouse */
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+    font-weight: bold; /* Texto em negrito ao passar o mouse */
+    border: 2px solid #0d47a1; /* Borda azul escura */
+}
+
+/* :active - link no momento do clique */
+a:active {
+    background-color: red; /* Fundo vermelho ao clicar */
+    color: white; /* Texto branco ao clicar */
+}
+
+.exemplo {
+    margin: 20px 0; /* Espaço acima e abaixo do contêiner */
+    padding: 15px; /* Espaço interno */
+    background-color: white; /* Fundo branco */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    display: flex; /* Layout flexível (linha por padrão) */
+    align-items: center; /* Alinhamento vertical central */
+    gap: 20px; /* Espaçamento entre os elementos internos */
+}
+
+.exemplo img {
+    width: 150px; /* Largura fixa da imagem */
+    height: 150px; /* Altura fixa da imagem */
+    object-fit: cover; /* Cobre todo o espaço sem distorcer */
+    border: 2px solid #666; /* Borda cinza escura */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.redimensionada {
+    width: 200px; /* Largura maior */
+    height: 100px; /* Altura menor */
+    object-fit: contain; /* Contém a imagem sem cortar */
+    object-position: top; /* Alinha a imagem ao topo do espaço */
+}
+
+.com-filtro {
+    filter: grayscale(100%) brightness(1.2); /* Filtro de escala de cinza e brilho aumentado */
+}
+
+.sobreposta {
+    position: relative; /* Ponto de referência para elementos posicionados absolutamente */
+}
+
+.imagem1 {
+    position: absolute; /* Posicionamento absoluto dentro do contêiner relativo */
+    top: 10px; /* 10px do topo */
+    left: 20px; /* 20px da esquerda */
+    z-index: 1; /* Camada inferior */
+}
+
+.imagem2 {
+    position: absolute; /* Posicionamento absoluto */
+    top: 40px; /* 40px do topo */
+    left: 50px; /* 50px da esquerda */
+    z-index: 2; /* Camada superior (fica sobre a imagem1) */
+}
+
+
+
+.p1 {
+color: #0d47a1;
+}
+.p2 {
+color: pink;
+}
+.p3{
+color: red;
+}
+
+#titulo{
+    color: #00ff00;
+}

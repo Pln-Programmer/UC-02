@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2 - CSS</title>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <h1>Cores e Modelos de Cores em CSS</h1>
+    <hr>
+
+    <h1>- O Modelo RGB</h1>
+    <h2 class="rgb">rgb(255, 0, 0)</h2>
+
+    <h1>- O Modelo HEX</h1>
+    <h2 class="hex">#00ff00</h2>
+
+    <h1>- O Modelo HSL</h1>
+    <h2 class="hsl">hsl(200, 100%, 50%)</h2>
+
+    <h1>- O Modelo CMYK</h1>
+    <h2 class="cmyk">Simulado com RGB: rgb(0, 255, 255)</h2>
+
+    <h1>- O Modelo HSV</h1>
+    <h2 class="hsv">Simulado com HSL: hsl(60, 100%, 50%)</h2>
+
+    <br>
+
+    <hr>
+
+    <h1>Exemplos de Listas com CSS</h1>
+
+    <h2>1. list-style-type: square</h2>
+    <ul class="lista-tipo">
+        <li>Maçã</li>
+        <li>Banana</li>
+        <li>Uva</li>
+    </ul>
+
+    <h2>2. list-style-position: inside</h2>
+    <ul class="lista-posicao-inside">
+        <li>Item posicionado dentro</li>
+        <li>Visual alinhado com o conteúdo</li>
+    </ul>
+
+    <h2>3. list-style-position: outside</h2>
+    <ul class="lista-posicao-outside">
+        <li>Item fora da margem esquerda</li>
+        <li>Estilo tradicional</li>
+    </ul>
+
+    <h2>4. list-style-image: ícone personalizado</h2>
+    <ul class="lista-imagem">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>5. margin e padding aplicados à lista</h2>
+    <ul class="lista-espaco">
+        <li>Espaçamento externo com margin</li>
+        <li>Espaçamento interno com padding</li>
+    </ul>
+
+    <h2>6. line-height para melhor legibilidade</h2>
+    <ul class="lista-legivel">
+        <li>Texto com espaçamento entre linhas</li>
+        <li>Facilita a leitura, especialmente em dispositivos móveis</li>
+    </ul>
+
+    <br>
+
+    <hr>
+
+    <h1>Exemplo de Estilização de Links com Pseudo-classes</h1>
+
+    <p>
+        <a href="https://www.exemplo1.com" target="_blank">Link não visitado</a>
+    </p>
+
+    <p>
+        <a href="https://www.exemplo2.com" target="_blank">Outro link</a>
+    </p>
+
+    <p>
+        Use <kbd>Tab</kbd> para navegar entre os links e veja o efeito do <code>:focus</code>.
+    </p>
+
+
+    <br>
+
+    <hr>
+
+
+    <h1>Estilizando Imagens com CSS</h1>
+
+    <h2>Redimensionamento e Alinhamento</h2>
+    <div class="exemplo">
+        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=300&q=80" alt="Paisagem redimensionada" class="redimensionada" />
+        <p><strong>object-fit: contain</strong> e <strong>object-position: top</strong><br> A imagem se ajusta ao contêiner sem cortar.</p>
+    </div>
+
+    <h2>Estilo: Borda, Arredondamento e Sombra</h2>
+    <div class="exemplo">
+        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=300&q=80" alt="Paisagem com borda e sombra" />
+        <p><strong>border</strong>, <strong>border-radius</strong> e <strong>box-shadow</strong> dão acabamento visual elegante.</p>
+    </div>
+
+    <h2>Filtros Visuais</h2>
+    <div class="exemplo">
+        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=300&q=80" alt="Paisagem com filtro" class="com-filtro" />
+        <p><strong>filter:</strong> efeitos como escala de cinza e brilho direto no CSS.</p>
+    </div>
+
+    <h2>Sobresposição com z-index</h2>
+    <div class="exemplo sobreposta">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=120&q=80" class="imagem1" alt="Imagem 1" />
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=100&q=80" class="imagem2" alt="Imagem 2" />
+        <p style="position: relative; z-index: 3; background: white; padding: 10px;">A imagem menor está sobre a maior com <strong>z-index</strong>.</p>
+    </div>
+        
+<br><br><br><br><br><br><br>
+    <p class="p1">Texto 1</p>
+    <p class="p2">Texto 2</p>
+    <p class="p3">Texto 3</p>
+<br>
+<h1 id="titulo">Abu</h1>
+</body>
+</html>
